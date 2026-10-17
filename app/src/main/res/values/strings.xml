@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pulse</string>
+    <string name="markets_kicker">Pulse</string>
+    <string name="markets_title">Markets</string>
+    <string name="search_hint">Search name or symbol</string>
+    <string name="clear_search">Clear search</string>
+    <string name="live">Live</string>
+    <string name="back">Back</string>
+    <string name="retry">Try again</string>
+    <string name="loading">Loading markets</string>
+    <string name="empty_search">No coins match that search.</string>
+    <string name="empty_markets">No markets saved yet.</string>
+    <string name="sample_banner">The list is bundled sample data because CoinGecko did not respond. A live Binance price replaces a placeholder when that USDT pair is streaming. Sample prices are not quotes.</string>
+    <string name="offline_cached">You are offline. Showing the last markets saved on this device.</string>
+    <string name="error_offline">You are offline. Try again when a connection is back.</string>
+    <string name="error_rate_limited">CoinGecko is rate-limiting this demo. Wait a moment, then try again.</string>
+    <string name="error_server">The market service returned an error.</string>
+    <string name="error_unknown">Could not refresh markets.</string>
+    <string name="market_cap">Market cap</string>
+    <string name="volume">Volume</string>
+    <string name="high_24h">24h high</string>
+    <string name="low_24h">24h low</string>
+    <string name="rank">Rank</string>
+    <string name="not_in_cache_title">This coin is not in the saved list.</string>
+    <string name="not_in_cache_body">Go back and refresh markets, then open it again.</string>
+    <string name="coin_image_cd">%1$s logo</string>
+</resources>
