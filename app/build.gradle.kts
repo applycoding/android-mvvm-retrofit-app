@@ -7,17 +7,18 @@ plugins {
     alias(libs.plugins.hilt)
 }
 
-val localProperties = java.util.Properties().apply {
-    val file = rootProject.file("local.properties")
-    if (file.exists()) {
-        file.inputStream().use(::load)
-    }
-}
-
 fun quotedBuildConfig(name: String): String {
-    val escaped = localProperties.getProperty(name).orEmpty()
-        .replace("\\", "\\\\")
-        .replace("\"", "\\\"")
+    val file = rootProject.file("local.properties")
+    val raw = if (file.exists()) {
+        file.readLines()
+            .map { it.trim() }
+            .firstOrNull { line -> line.startsWith("$name=") && !line.startsWith("#") }
+            ?.substringAfter("=", "")
+            .orEmpty()
+    } else {
+        ""
+    }
+    val escaped = raw.replace("\\", "\\\\").replace("\"", "\\\"")
     return "\"$escaped\""
 }
 
