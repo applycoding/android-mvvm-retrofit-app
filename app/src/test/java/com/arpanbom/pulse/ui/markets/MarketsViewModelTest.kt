@@ -11,7 +11,6 @@ import com.arpanbom.pulse.domain.usecase.ObserveLiveQuotesUseCase
 import com.arpanbom.pulse.domain.usecase.ObserveMarketsUseCase
 import com.arpanbom.pulse.domain.usecase.RefreshMarketsUseCase
 import com.arpanbom.pulse.testutil.MainDispatcherRule
-import io.mockk.coAnswers
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk
