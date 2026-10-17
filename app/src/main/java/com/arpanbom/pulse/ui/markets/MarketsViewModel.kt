@@ -87,10 +87,6 @@ class MarketsViewModel @Inject constructor(
                         hasLoaded = true,
                     )
                 }
-                else -> {
-                    val unexpected: Nothing = result
-                    unexpected
-                }
             }
         }
     }

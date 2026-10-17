@@ -11,8 +11,4 @@ fun MarketError.asMessage(): String = when (this) {
     MarketError.RateLimited -> stringResource(R.string.error_rate_limited)
     MarketError.Server -> stringResource(R.string.error_server)
     MarketError.Unknown -> stringResource(R.string.error_unknown)
-    else -> {
-        val unexpected: Nothing = this
-        unexpected
-    }
 }
