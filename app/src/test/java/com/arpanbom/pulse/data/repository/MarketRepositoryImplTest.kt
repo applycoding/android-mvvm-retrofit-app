@@ -10,11 +10,9 @@ import com.arpanbom.pulse.domain.model.MarketError
 import com.arpanbom.pulse.domain.model.RefreshResult
 import com.arpanbom.pulse.domain.repository.LivePriceStream
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import io.mockk.any
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
-import io.mockk.withArg
 import java.time.Instant
 import java.util.concurrent.TimeUnit
 import kotlinx.coroutines.ExperimentalCoroutinesApi
