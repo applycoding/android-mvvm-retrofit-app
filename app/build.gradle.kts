@@ -72,6 +72,14 @@ android {
 
     testOptions {
         unitTests.isReturnDefaultValues = true
+        unitTests.all {
+            it.testLogging {
+                showExceptions = true
+                showCauses = true
+                showStackTraces = true
+                exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+            }
+        }
     }
 
     lint {
